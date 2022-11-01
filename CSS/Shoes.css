@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.fullheader{
+    font-size: 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.header{
+    background-color: black;
+    color: white;
+    width: 50%;
+}
+
+.logo{
+    width: 50%;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.header>ul{
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+
+.header>ul>li{
+    list-style: none;
+    position: relative;
+    flex: 1;
+}
+
+.header>ul>li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: block;
+    padding: 10px 5px;
+}
+
+.header>ul>li:hover{
+    background-color: #e4821c;
+    
+}
+
+/* SUBMENU/ NAVIGATION 2 LEVEL */
+
+.header>ul>li>ul{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    color: white;
+    display: none;  
+    list-style: none;
+}
+
+.header>ul>li:hover>ul{
+    display: block;
+    background-color: #e4821c;
+}
+
+.header>ul>li>ul>li:hover{
+    font-weight: bold;
+    color: white;
+    background-color: black;
+}
+
+.first{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}   
+
+.first img{
+    width: 360px;
+    padding-top: 30px;
+}
+
+.second{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.second img{
+    width: 360px;
+}
+
+.third{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.third img{
+    width: 360px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 100px;
+    margin-left: -8px;
+}
+
+.footer a{
+    font-size: 30px;
+    color: white;
+}
+
+body p{
+    font-size: 20px;
+}
+
+@media (max-width: 1080px){
+    .header>ul{
+        display: block;
+    }
+    .header>ul>li{
+        display: block;
+    }
+    .header>ul>li>ul{
+        position: relative;
+    }
+    .footer{
+        display: block;
+    }
+}

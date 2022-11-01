@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.fullheader{
+    font-size: 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.header{
+    background-color: black;
+    color: white;
+    width: 50%;
+}
+
+.logo{
+    width: 50%;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.header>ul{
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+
+.header>ul>li{
+    list-style: none;
+    position: relative;
+    flex: 1;
+}
+
+.header>ul>li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: block;
+    padding: 10px 5px;
+}
+
+.header>ul>li:hover{
+    background-color: #e4821c;
+    
+}
+
+.header>ul>li>ul{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    color: white;
+    display: none;  
+    list-style: none;
+}
+
+.header>ul>li:hover>ul{
+    display: block;
+    background-color: #e4821c;
+}
+
+.header>ul>li>ul>li:hover{
+    font-weight: bold;
+    color: white;
+    background-color: black;
+}
+
+.reg{
+    font-size: 23px;
+    width: 100%;
+    background-color: white;
+    padding: 150px;
+}
+
+.reg h1{
+    color: black;
+}
+
+.reg td{
+    color: black;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 100px;
+    margin-left: -8px;
+}
+
+.footer a{
+    font-size: 30px;
+    color: white;
+}
+
+.table{
+    display:  table;
+    width:auto;
+    background-color:#eee;
+    border:1px solid  #666666;
+    border-spacing:5px;
+}
+
+.divRow{
+    display:table-row;
+    width:auto;
+}
+.divCell{
+    float:left;/*fix for  buggy browsers*/
+    display:table-column;
+    width:200px;
+}
+
+.maju1{
+    margin-left: 200px;
+}
+
+.maju2{
+    margin-left: 200px;
+}
+
+@media (max-width: 1080px){
+    .header>ul{
+        display: block;
+    }
+    .header>ul>li{
+        display: block;
+    }
+    .header>ul>li>ul{
+        position: relative;
+    }
+    .footer{
+        display: block;
+    }
+}

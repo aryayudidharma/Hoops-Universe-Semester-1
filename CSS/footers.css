@@ -1,0 +1,176 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header{
+    font-size: 23px;
+    background-color: black;
+    background-size: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 100px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo img{
+    top: 50px;
+    position: absolute;
+    width: 480px;
+}
+
+.header ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+
+.header ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: white;
+}
+
+.header ul li a:hover{
+    background: white;
+    color: black;
+}
+
+.subm1{
+    display: none;
+}
+
+.header ul li .subm1 a{
+    color: black;
+}
+
+.header ul li .subm1 a:hover{
+    background: black;
+    color: white;
+}
+
+.header ul li:hover .subm1{
+    display: block;
+    position: absolute;
+    background: whitesmoke;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.header ul li:hover .subm1 ul{
+    display: block;
+    margin: 10px;
+}
+
+.header ul li:hover .subm1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted black;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.header ul li:hover .subm1 ul li:last-child{
+    border-bottom: none;
+}
+
+.Footer1{
+    position: absolute;
+    font-size: 45px;
+    color: black;
+    top: 300px;
+    left: 500px;
+}
+
+.Footer1 h1{
+    font-size: 60px;
+    padding: 50px 0px 100px;
+}
+
+.Footer2 h1{
+    padding: 50px 0px 100px;
+}
+
+.Footer2{
+    position: absolute;
+    font-size: 25px;
+    color: black;
+    top: 300px;
+    left: 150px;
+}
+
+.Footer2 p{
+    margin-right: 750px;
+}
+
+.Footer2 img{
+    width: 560px;
+    position: absolute;
+    top: 100px;
+    right: 90px;
+}
+
+.Footer3 h1{
+    padding: 50px 0px 100px;
+}
+
+.Footer3{
+    position: absolute;
+    font-size: 35px;
+    color: black;
+    top: 300px;
+    left: 300px;
+}
+
+.Footer3 img{
+    width: 270px;
+    position: absolute;
+    top: 200px;
+    left: 500px;
+}
+
+.Footer4{
+    position: absolute;
+    font-size: 35px;
+    color: black;
+    top: 300px;
+    left: 300px;
+    margin-right: 200px;
+}
+
+.Footer4 h1{
+    padding: 50px 0 50px;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 100px;
+    margin-left: -8px;
+}
+
+.footer a{
+    font-size: 30px;
+    color: white;
+}       
